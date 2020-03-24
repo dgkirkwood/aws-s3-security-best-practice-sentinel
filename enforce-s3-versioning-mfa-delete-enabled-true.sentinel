@@ -7,8 +7,8 @@ all_s3_buckets =  filter tfplan.resource_changes as _, rc {
     	rc.change.actions is ["create"]  
 }
 
-print(all_s3_buckets)
-print("Test Print")
+#print(all_s3_buckets)
+print("The nominated bucket has not been enabled for MFA delete as per AWS best practice recommendations. Please see: https://docs.aws.amazon.com/AmazonS3/latest/dev/security-best-practices.html")
 
 
 //make sure every bucket has a versioning block
