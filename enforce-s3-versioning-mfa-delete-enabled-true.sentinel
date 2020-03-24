@@ -8,6 +8,7 @@ all_s3_buckets =  filter tfplan.resource_changes as _, rc {
 }
 
 print(all_s3_buckets)
+print("Test Print")
 
 
 //make sure every bucket has a versioning block
